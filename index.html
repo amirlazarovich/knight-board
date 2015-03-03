@@ -12,16 +12,28 @@
 		    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	    }
 	    div {
-		font-size: 5em;
-		display: table-cell;
-		color: #444;
-		vertical-align: middle;
-		text-align: center;
-		width: 100vw;
-		height: 100vh;
+			font-size: 5em;
+			display: table-cell;
+			color: #444;
+			vertical-align: middle;
+			text-align: center;
+			width: 100vw;
+			height: 100vh;
 	    }
-	    div > span {
-		font-size: 0.3em;
+	    div > * {
+			font-size: 0.3em;
+	    }
+
+	    div > a {
+	    	color: #00C853;
+	    	text-decoration: none;
+	    	-webkit-transition: color 0.25s;
+	    	-mos-transition: color 0.25s;
+	    	transition: color 0.25s;
+	    }
+
+	    div > a:hover {
+	    	color: #69F0AE;
 	    }
     </style>
 
@@ -33,7 +45,10 @@
 </head>
 
 <body>
-	<div>Open the Console<br/><span>(you might need to refresh)</span></div>
+	<div>Open the Console<br/>
+		<span>(you might need to refresh)</span><br/>
+		<a href="knight-board.pdf" target="_blank">View Questions</a>
+	</div>
 </body>
 
 </html>
