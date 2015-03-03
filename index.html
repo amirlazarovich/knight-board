@@ -39,6 +39,7 @@
 
     <script type="text/javascript">
 	    // run tests on a separate thread
+	    console.log("%c IF YOU ONLY SEE THIS, REFRESH WHILE THE CONSOLE IS OPEN", "color: #DD2C00");
 	    var worker = new Worker('test-web.js');
 	    worker.postMessage();
     </script>
