@@ -7,5 +7,9 @@
     "test": "node test.js"
   },
   "author": "Amir Lazarovich",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amirlazarovich/knight-board.git"
+  }
 }
