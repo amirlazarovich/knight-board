@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knight Board</title>
+
+    <style>
+    div {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 5em;
+        display: table-cell;
+        color: #444;
+        vertical-align: middle;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    </style>
+
+    <script type="text/javascript">
+	    // run tests on a separate thread
+	    var worker = new Worker('test-web.js');
+	    worker.postMessage();
+    </script>
+</head>
+
+<body>
+    <div>Open the Console</div>
+</body>
+
+</html>
