@@ -1,0 +1,11 @@
+{
+  "name": "knight-board",
+  "version": "0.0.1",
+  "description": "cruise interview challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Amir Lazarovich",
+  "license": "MIT"
+}
