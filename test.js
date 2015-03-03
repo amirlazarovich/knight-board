@@ -7,13 +7,13 @@ var test = {
 	all: function() {
 		console.log(KnightBoard.CYAN, "Testing Knight Board Challenge...", KnightBoard.BLACK);
 
-		this.level1A();
-		this.level2();
-		this.level3();
-		this.level1B();
-		this.level4();
-		this.level5A();
-		this.level5B();	
+		// this.level1A();
+		// this.level2();
+		// this.level3();
+		// this.level1B();
+		// this.level4();
+		// this.level5A();
+		// this.level5B();	
 		this.level5C();
 
 		console.log(KnightBoard.GREEN, "All tests completed successfully :)", KnightBoard.BLACK);
@@ -36,6 +36,10 @@ var test = {
 
 		return res;
 	},
+
+    getCachedQuads: function() {
+        return {'0:01:3O':{hamiltonian:true,path:[[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[1,1],[0,1],[0,2],[0,3],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3]]},'1:03:1O':{hamiltonian:true,path:[[1,0],[2,0],[3,0],[2,1],[1,1],[0,0],[0,1],[0,2],[1,2],[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[3,1]]},'0:13:1O':{hamiltonian:true,path:[[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[2,1],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3],[3,3],[3,2],[3,1]]},'0:11:3O':{hamiltonian:true,path:[[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[2,2],[3,2],[3,3],[2,3],[1,2],[0,2],[0,3],[1,3]]},'1:00:1O':{hamiltonian:true,path:[[1,0],[2,0],[3,0],[3,1],[2,1],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[1,1],[0,0],[0,1]]},'3:10:1O':{hamiltonian:true,path:[[3,1],[2,1],[3,0],[2,0],[1,0],[0,0],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[0,1]]},'3:11:3O':{hamiltonian:true,path:[[3,1],[2,1],[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[2,2],[3,2],[3,3],[2,3],[1,2],[0,2],[0,3],[1,3]]},'0:11:0O':{hamiltonian:true,path:[[0,1],[0,2],[1,2],[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[2,1],[3,1],[3,0],[2,0],[1,1],[0,0],[1,0]]},'1:31:0O':{hamiltonian:true,path:[[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,3],[0,2],[0,1],[0,0],[1,1],[2,1],[3,1],[3,0],[2,0],[1,0]]},'1:30:1O':{hamiltonian:true,path:[[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,3],[0,2],[1,1],[2,1],[3,1],[3,0],[2,0],[1,0],[0,0],[0,1]]},'3:10:0O':{hamiltonian:true,path:[[3,1],[2,1],[3,0],[2,0],[1,0],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[0,1],[0,0]]},'0:13:0O':{hamiltonian:true,path:[[0,1],[1,1],[0,0],[1,0],[2,0],[2,1],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3],[3,3],[3,2],[3,1],[3,0]]},'0:33:1O':{hamiltonian:true,path:[[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,2],[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[2,1],[3,1]]},'1:00:3O':{hamiltonian:true,path:[[1,0],[2,0],[3,0],[3,1],[2,1],[1,1],[0,0],[0,1],[0,2],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3]]},'3:03:3O':{hamiltonian:true,path:[[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[2,1],[3,1],[3,2],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3],[3,3]]},'0:00:1O':{hamiltonian:true,path:[[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[0,1]]},'3:30:1O':{hamiltonian:true,path:[[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[2,2],[3,2],[3,1],[2,1],[3,0],[2,0],[1,0],[0,0],[1,1],[0,1]]},'0:12:3O':{hamiltonian:true,path:[[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[3,2],[3,3],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3]]},'2:03:1O':{hamiltonian:true,path:[[2,0],[3,0],[2,1],[1,1],[1,0],[0,0],[0,1],[0,2],[1,2],[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[3,1]]},'0:10:3O':{hamiltonian:true,path:[[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[2,2],[3,2],[3,3],[2,3],[1,3],[1,2],[0,2],[0,3]]},'3:00:1O':{hamiltonian:true,path:[[3,0],[2,0],[1,0],[0,0],[1,1],[2,1],[3,1],[3,2],[2,2],[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[0,1]]},'3:31:3O':{hamiltonian:true,path:[[3,3],[2,3],[2,2],[3,2],[3,1],[2,1],[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[1,2],[0,2],[0,3],[1,3]]},'1:01:3O':{hamiltonian:true,path:[[1,0],[2,0],[3,0],[3,1],[2,1],[1,1],[0,0],[0,1],[0,2],[0,3],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3]]},'3:03:1O':{hamiltonian:true,path:[[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[2,1],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3],[3,3],[3,2],[3,1]]},'3:13:0O':{hamiltonian:true,path:[[3,1],[2,1],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[0,1],[0,0],[1,0],[2,0],[3,0]]},'0:10:0O':{hamiltonian:true,path:[[0,1],[1,1],[2,1],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3],[3,3],[3,2],[3,1],[3,0],[2,0],[1,0],[0,0]]},'3:33:1O':{hamiltonian:true,path:[[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[2,2],[3,2],[2,1],[1,1],[0,1],[0,0],[1,0],[2,0],[3,0],[3,1]]},'3:01:3O':{hamiltonian:true,path:[[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[2,1],[3,1],[3,2],[2,2],[3,3],[2,3],[1,2],[0,2],[0,3],[1,3]]},'1:33:1O':{hamiltonian:true,path:[[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,3],[0,2],[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[2,1],[3,1]]},'3:11:0O':{hamiltonian:true,path:[[3,1],[2,1],[3,0],[2,0],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[0,1],[0,0],[1,0]]},'1:30:0O':{hamiltonian:true,path:[[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,3],[0,2],[0,1],[1,1],[2,1],[3,1],[3,0],[2,0],[1,0],[0,0]]},'0:30:1O':{hamiltonian:true,path:[[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,2],[1,1],[2,1],[3,1],[3,0],[2,0],[1,0],[0,0],[0,1]]},'3:13:3O':{hamiltonian:true,path:[[3,1],[2,1],[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[1,2],[0,2],[0,3],[1,3],[2,3],[2,2],[3,2],[3,3]]},'0:13:3O':{hamiltonian:true,path:[[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[2,2],[1,2],[0,2],[0,3],[1,3],[2,3],[3,2],[3,3]]},'0:03:1O':{hamiltonian:true,path:[[0,0],[1,0],[2,0],[3,0],[2,1],[1,1],[0,1],[0,2],[1,2],[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[3,1]]},'3:10:3O':{hamiltonian:true,path:[[3,1],[2,1],[3,0],[2,0],[1,0],[0,0],[0,1],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,2],[0,3]]},'3:00:0O':{hamiltonian:true,path:[[3,0],[2,0],[1,0],[1,1],[2,1],[3,1],[3,2],[2,2],[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[0,1],[0,0]]},'3:01:0O':{hamiltonian:true,path:[[3,0],[2,0],[2,1],[3,1],[3,2],[2,2],[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[1,1],[0,1],[0,0],[1,0]]},'1:33:3O':{hamiltonian:true,path:[[1,3],[2,3],[2,2],[1,2],[0,3],[0,2],[0,1],[1,1],[0,0],[1,0],[2,0],[3,0],[3,1],[2,1],[3,2],[3,3]]},'1:33:0O':{hamiltonian:true,path:[[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[0,3],[0,2],[0,1],[1,1],[0,0],[1,0],[2,0],[2,1],[3,1],[3,0]]},'1:30:3O':{hamiltonian:true,path:[[1,3],[2,3],[3,3],[3,2],[2,2],[1,2],[1,1],[2,1],[3,1],[3,0],[2,0],[1,0],[0,0],[0,1],[0,2],[0,3]]},'3:30:0O':{hamiltonian:true,path:[[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[2,2],[3,2],[3,1],[2,1],[3,0],[2,0],[1,0],[1,1],[0,1],[0,0]]},'1:00:0O':{hamiltonian:true,path:[[1,0],[2,0],[3,0],[3,1],[2,1],[1,1],[1,2],[2,2],[3,2],[3,3],[2,3],[1,3],[0,3],[0,2],[0,1],[0,0]]},'1:03:0O':{hamiltonian:true,path:[[1,0],[2,0],[2,1],[1,1],[0,0],[0,1],[0,2],[1,2],[0,3],[1,3],[2,3],[3,3],[3,2],[2,2],[3,1],[3,0]]},'1:03:3O':{hamiltonian:true,path:[[1,0],[2,0],[3,0],[3,1],[2,1],[1,1],[0,0],[0,1],[0,2],[1,2],[0,3],[1,3],[2,3],[2,2],[3,2],[3,3]]},'0:31:3O':{hamiltonian:true,path:[[0,3],[0,2],[1,2],[2,2],[2,1],[1,1],[0,1],[0,0],[1,0],[2,0],[3,0],[3,1],[3,2],[3,3],[2,3],[1,3]]},'3:31:0O':{hamiltonian:true,path:[[3,3],[2,3],[1,3],[0,3],[0,2],[1,2],[2,2],[3,2],[3,1],[2,1],[3,0],[2,0],[1,1],[0,1],[0,0],[1,0]]},'0:03:2':{hamiltonian:false,path:[[0,0],[2,1],[0,2],[2,3],[1,1],[3,0],[2,2],[1,0],[3,1],[1,2],[2,0],[0,1],[1,3],[3,2]]},'0:01:2':{hamiltonian:false,path:[[0,0],[2,1],[0,2],[2,3],[3,1],[1,0],[2,2],[0,3],[1,1],[3,2],[1,3],[0,1],[2,0],[1,2]]},'0:00:2':{hamiltonian:false,path:[[0,0],[2,1],[3,3],[1,2],[2,0],[0,1],[1,3],[3,2],[1,1],[3,0],[2,2],[1,0],[3,1],[2,3],[0,2]]},'3:00:2':{hamiltonian:false,path:[[3,0],[1,1],[3,2],[1,3],[2,1],[0,0],[1,2],[2,0],[0,1],[2,2],[1,0],[3,1],[2,3],[0,2]]},'3:01:2':{hamiltonian:false,path:[[3,0],[1,1],[3,2],[1,3],[2,1],[0,2],[2,3],[3,1],[1,0],[2,2],[0,1],[2,0],[1,2]]},'3:03:2':{hamiltonian:false,path:[[3,0],[1,1],[0,3],[2,2],[1,0],[3,1],[2,3],[0,2],[2,1],[0,0],[1,2],[2,0],[0,1],[1,3],[3,2]]},'3:00:1':{hamiltonian:false,path:[[3,0],[1,1],[0,3],[2,2],[1,0],[3,1],[2,3],[0,2],[2,1],[0,0],[1,2],[2,0],[3,2],[1,3],[0,1]]},'3:31:2':{hamiltonian:false,path:[[3,3],[2,1],[0,2],[2,3],[3,1],[1,0],[2,2],[0,3],[1,1],[3,2],[1,3],[0,1],[2,0],[1,2]]},'0:02:0':{hamiltonian:false,path:[[0,0],[2,1],[3,3],[1,2],[3,1],[1,0],[0,2],[2,3],[1,1],[3,0],[2,2],[0,1],[1,3],[3,2],[2,0]]},'0:30:2':{hamiltonian:false,path:[[0,3],[2,2],[0,1],[2,0],[1,2],[3,3],[2,1],[1,3],[3,2],[1,1],[2,3],[3,1],[1,0],[0,2]]},'3:02:0':{hamiltonian:false,path:[[3,0],[1,1],[3,2],[1,3],[2,1],[0,0],[1,2],[3,1],[2,3],[0,2],[1,0],[2,2],[0,1],[2,0]]},'0:33:2':{hamiltonian:false,path:[[0,3],[2,2],[3,0],[1,1],[2,3],[0,2],[1,0],[3,1],[1,2],[3,3],[2,1],[1,3],[0,1],[2,0],[3,2]]},'0:00:1':{hamiltonian:false,path:[[0,0],[2,1],[0,2],[2,3],[1,1],[3,0],[2,2],[1,0],[3,1],[1,2],[2,0],[3,2],[1,3],[0,1]]},'3:33:2':{hamiltonian:false,path:[[3,3],[1,2],[3,1],[1,0],[2,2],[0,3],[1,1],[2,3],[0,2],[2,1],[1,3],[0,1],[2,0],[3,2]]},'0:32:0':{hamiltonian:false,path:[[0,3],[2,2],[0,1],[1,3],[3,2],[1,1],[2,3],[3,1],[1,0],[0,2],[2,1],[0,0],[1,2],[2,0]]},'3:30:2':{hamiltonian:false,path:[[3,3],[1,2],[0,0],[2,1],[1,3],[3,2],[2,0],[0,1],[2,2],[0,3],[1,1],[2,3],[3,1],[1,0],[0,2]]},'0:30:1':{hamiltonian:false,path:[[0,3],[2,2],[3,0],[1,1],[2,3],[0,2],[1,0],[3,1],[1,2],[3,3],[2,1],[1,3],[3,2],[2,0],[0,1]]},'0:31:2':{hamiltonian:false,path:[[0,3],[2,2],[0,1],[2,0],[3,2],[1,1],[2,3],[3,1],[1,0],[0,2],[2,1],[0,0],[1,2]]},'3:32:0':{hamiltonian:false,path:[[3,3],[1,2],[0,0],[2,1],[0,2],[2,3],[3,1],[1,0],[2,2],[0,3],[1,1],[3,2],[1,3],[0,1],[2,0]]},'0:33:1':{hamiltonian:false,path:[[0,3],[2,2],[0,1],[2,0],[1,2],[3,3],[2,1],[1,3],[3,2],[1,1],[2,3],[0,2],[1,0],[3,1]]},'0:33:0':{hamiltonian:false,path:[[0,3],[2,2],[0,1],[2,0],[3,2],[1,3],[2,1],[0,0],[1,2],[3,1],[1,0],[0,2],[2,3],[1,1],[3,0]]},'3:30:1':{hamiltonian:false,path:[[3,3],[1,2],[3,1],[1,0],[2,2],[0,3],[1,1],[2,3],[0,2],[2,1],[1,3],[3,2],[2,0],[0,1]]},'3:03:3':{hamiltonian:false,path:[[3,0],[1,1],[3,2],[1,3],[2,1],[0,2],[2,3],[3,1],[1,0],[2,2],[0,1],[2,0],[1,2],[3,3]]}};
+    },
 
     print: function(level, msg, pass) {
         if (!pass) {
@@ -124,8 +128,10 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var pass = test.expected === board.isValid(test.moves, test.print);
-            me.print("level1a", test.label, pass);
+            var time = Date.now() - start;
+            me.print("level1a", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL1A passed!\n", KnightBoard.BLACK);
@@ -191,8 +197,10 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var pass = test.expected === board.isValid(test.moves, test.print, test.symbols);
-            me.print("level1b", test.label, pass);
+            var time = Date.now() - start;
+            me.print("level1b", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL1B passed!\n", KnightBoard.BLACK);
@@ -243,7 +251,9 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var path = board.getMoveSequence(test.start, test.end);
+            var time = Date.now() - start;
             var pass;
             if (test.expected) {
             	console.log("Moves summary: ");
@@ -253,7 +263,7 @@ var test = {
             } else {
                 pass = (path === null);
             }
-            me.print("level2", test.label, pass);
+            me.print("level2", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL2 passed!\n", KnightBoard.BLACK);
@@ -304,8 +314,9 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var path = board.shortestPath(test.start, test.end);
-
+            var time = Date.now() - start;
             var pass = false;
             if (test.expected && path !== null) {
         		console.log("Moves summary: " + (path.length - 1) + " moves");
@@ -315,7 +326,7 @@ var test = {
             } else if (!test.expected) {
                 pass = (path === null);
             }
-            me.print("level3", test.label, pass);
+            me.print("level3", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL3 passed!\n", KnightBoard.BLACK);
@@ -372,8 +383,9 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var result = board.shortestPathWithWeights(test.start, test.end, test.symbols);
-
+            var time = Date.now() - start;
             var pass;
             if (test.expected && result !== null) {
             	console.log("Moves summary: " + result.distance + " total weights");
@@ -383,7 +395,7 @@ var test = {
             } else if (!test.expected) {
                 pass = (result === null);
             }
-            me.print("level4", test.label, pass);
+            me.print("level4", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL4 passed!\n", KnightBoard.BLACK);
@@ -416,8 +428,9 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var result = board.longestSimplePathBruteForce(test.start, test.end);
-
+            var time = Date.now() - start;
             var pass = false;
             if (test.expected && result !== null) {
         		console.log("Moves summary: " + (result.path.length - 1) + " moves");
@@ -427,7 +440,7 @@ var test = {
             } else if (!test.expected) {
                 pass = (result === null);
             }
-            me.print("level5a", test.label, pass);
+            me.print("level5a", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL5A passed!\n", KnightBoard.BLACK);
@@ -478,8 +491,9 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var path = board.longestSimplePath(test.start, test.end);
-
+            var time = Date.now() - start;
             var pass = false;
             if (test.expected && path !== null) {
         		console.log("Moves summary: " + (path.length - 1) + " moves");
@@ -487,7 +501,7 @@ var test = {
             } else if (!test.expected) {
                 pass = (path === null);
             }
-            me.print("level5b", test.label, pass);
+            me.print("level5b", test.label + " (took: " + time + "ms)", pass);
         });
 
         console.log(KnightBoard.GREEN, "+ LEVEL5B passed!\n", KnightBoard.BLACK);
@@ -497,8 +511,9 @@ var test = {
     level5C: function() {
     	console.log(KnightBoard.BLUE, "** LEVEL 5C ** ", KnightBoard.BLACK);
     	var board = new KnightBoard(1024);
-        var tests = [
-        {
+        board.setCache(this.getCachedQuads());
+        
+        var tests = [{
             label: "legal moves: simple",
             expected: true,
             start: [0, 0],
@@ -521,8 +536,9 @@ var test = {
         // run all tests
         var me = this;
         tests.forEach(function(test) {
+            var start = Date.now();
             var path = board.longestSimplePath(test.start, test.end);
-
+            var time = Date.now() - start;
             var pass = false;
             if (test.expected && path !== null) {
         		console.log("Moves summary: " + (path.length - 1) + " moves");
@@ -530,9 +546,18 @@ var test = {
             } else if (!test.expected) {
                 pass = (path === null);
             }
-            me.print("level5c", test.label, pass);
+            me.print("level5c", test.label + " (took: " + time + "ms)", pass);
         });
 
+        // console.log("***************************************************************");
+        // console.log("{");
+        // for (i in board._cachedQuad) {
+        //     if (board._cachedQuad.hasOwnProperty(i)) {
+        //         console.log("'" + i + "':", board._cachedQuad[i], ",");
+        //     }
+        // }
+        // console.log("}");
+        // console.log("***************************************************************");
         console.log(KnightBoard.GREEN, "+ LEVEL5C passed!\n", KnightBoard.BLACK);
         return true;
     }

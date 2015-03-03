@@ -1295,6 +1295,10 @@
         return prefix.concat(middle).concat(suffix);
     };
 
+    KnightBoard.prototype.setCache = function(cache) {
+        this._cachedQuad = cache;
+    };
+
     // ---------------------------
     // Class: Map
     // ---------------------------
