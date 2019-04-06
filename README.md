@@ -1,4 +1,4 @@
-# Cruise Interview Challenge: Knight Board
+# Interview Challenge: Knight Board
 
 ###Run
 	npm test
